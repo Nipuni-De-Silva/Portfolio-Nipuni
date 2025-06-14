@@ -7,11 +7,17 @@ import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap',
+  fallback: ['system-ui', 'Arial', 'sans-serif'],
+  preload: true,
+  weight: ['400', '500', '600', '700'],
+});
 
 export const metadata = {
-  title: "Nipuni | Personal Portfolio",
-  description: "Nipuni is a full-stack developer.",
+  title: "Nipuni | Software Engineer Portfolio",
+  description: "Nipuni is a software engineer specializing in AI/ML technologies and full-stack development.",
 };
 
 export default function RootLayout({

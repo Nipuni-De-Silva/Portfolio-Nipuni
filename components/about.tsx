@@ -16,28 +16,30 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
-    >
-      <SectionHeading>About me</SectionHeading>
+    >      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        I'm a <span className="font-medium">Software Engineer</span> with experience in developing and 
+        deploying full-stack software solutions, including production-grade AI features. 
+        I have a strong focus on <span className="font-medium">system architecture design</span> and 
+        hands-on expertise across the entire software development life cycle. 
+        <span className="italic"> I'm known for quickly learning and adapting</span> to new technologies, 
+        with consistent recognition for writing <span className="underline">clean, scalable, and stable code</span>.
+      </p>
+
+      <p className="mb-3">
+        My core technical skills include{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          Java Spring Boot, Python FastAPI, Angular, and AI/ML technologies
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . I'm experienced with microservices architecture, RESTful API design, and 
+        various database technologies. I demonstrate the ability to lead and contribute 
+        effectively within cross-functional teams, driven by a passion for delivering impactful, 
+        user-centric solutions in fast-paced, dynamic environments.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
+        <span className="italic">Currently</span>, I'm pursuing my Bachelor of Information and Communication 
+        Technology degree with a strong academic record (GPA 3.83/4.00).
         video games, watching movies, and playing with my dog. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}

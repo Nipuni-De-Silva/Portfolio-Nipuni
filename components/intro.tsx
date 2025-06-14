@@ -56,19 +56,17 @@ export default function Intro() {
             👋
           </motion.span>
         </div>
-      </div>
-
-      <motion.h1
+      </div>      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="">Hello, I'm Nipuni <br /></span>
-        <span className="">Aspiring full-stack developer with a focus on MERN stack. </span> {" "}
-        {/* <span className="font-bold">8 years</span> of experience.  */}
+        <span className="">Software Engineer with expertise in </span> {" "}
+        <span className="font-bold">AI/ML and Full Stack Development</span>
         
-        I enjoy building <span className=""><br />
-        Web sites & apps.</span>
+        <span className=""><br />
+        Specializing in system architecture and production-grade AI features</span>
       </motion.h1>
 
       <motion.div
@@ -78,8 +76,7 @@ export default function Intro() {
         transition={{
           delay: 0.1,
         }}
-      >
-        {/* <Link
+      >        <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
@@ -89,12 +86,10 @@ export default function Intro() {
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link> */}
-
-        <a
+        </Link><a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="https://drive.google.com/drive/folders/1ukextQGl0v11bMkZQMGoIyoXhe5RON7f?usp=sharing"
-          download
+          target="_blank"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />

@@ -2,9 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import projectImage from "@/public/new.jpg";
 
 export const links = [
   {
@@ -35,73 +33,91 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Bachelor of Information and Communication Technology",
+    location: "University of Sri Jayewardenepura, Sri Lanka",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Currently pursuing my degree with a GPA of 3.83/4.00, focusing on software engineering and artificial intelligence.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "July 2021 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Associate Software Engineer",
+    location: "Zafer (AI)",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Working as a core member of the AI and R&D teams to design, develop, and deploy production-grade AI features like AI Summarizer, Document Chat, AI Search, AI AutoFill, and AI Insight. Led backend development using Python, Spring Boot, and Microservices.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Nov 2024 - Present",
+  },
+  {
+    title: "Intern Software Engineer",
+    location: "ZorroSign Inc",
+    description:
+      "Collaborated with cross-functional teams to deliver production-ready code, enhanced the Notification Service with 90% increased code coverage, contributed to AI Document Autofill feature, and built a full-stack IoT Device Management solution.",
+    icon: React.createElement(CgWorkAlt),
+    date: "May 2024 - Oct 2024",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "ReviewBar - Augmented Product Review System",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "An e-commerce platform that automatically extracts product features and sentiment from customer reviews to help shoppers make informed purchasing decisions.",
+    tags: ["Vue.js", "Node.js", "Express.js", "MongoDB"],
+    imageUrl: projectImage,
   },
   {
-    title: "rmtDev",
+    title: "Workout-Buddy - Personalized Fitness App",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A comprehensive fitness application that allows users to create, track, and manage personalized workout routines based on their fitness goals and preferences.",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    imageUrl: projectImage,
   },
   {
-    title: "Word Analytics",
+    title: "Note-it - Note-taking Web Application",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A feature-rich note-taking application designed for efficiency and organization with tagging, categorization, and search functionality to keep notes accessible across devices.",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    imageUrl: projectImage,
   },
+  {
+    title: "UNI-Share - Blogging Platform for Uni Students",
+    description:
+      "A dedicated blogging platform tailored for university students to share knowledge, experiences, and resources within their academic community.",
+    tags: ["HTML", "CSS", "PHP", "MySQL"],
+    imageUrl: projectImage,
+  },
+  {
+    title: "Local Library - Online Catalog System",
+    description:
+      "An online catalog system for local libraries that enables users to browse available books, manage loans, and reserve items for future borrowing.",
+    tags: ["JavaScript", "Express.js", "MongoDB"],
+    imageUrl: projectImage,
+  }
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
+  "Java Spring Boot",
+  "Python FastAPI",
+  "Python FlaskAPI",
+  "Angular",
+  "HTML/CSS/JS",
+  "LLM",
+  "RAG",
+  "MCP Protocol",
+  "A2A Protocol",
+  "Prompt Engineering",
+  "Microservices",
+  "RESTful API",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "MySQL",
+  "VectorDB",
+  "Neo4j",
+  "Git",
+  "Docker",
+  "Kubernetes",
+  "Apache Kafka",
+  "ELK Stack",
+  "Unit Testing",
+  "Agile/Scrum",
 ] as const;
