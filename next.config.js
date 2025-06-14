@@ -1,13 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
+const nextConfig = {  images: {
     remotePatterns: [
       {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
     ],
-    unoptimized: true,
+    unoptimized: false, // Enable Next.js image optimization
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048], // Define optimal device sizes
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384], // Define image sizes
   },
   experimental: {
     serverActions: true,

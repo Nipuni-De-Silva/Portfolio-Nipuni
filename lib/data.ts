@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import defaultImage from "@/public/profile.jpg";
+import defaultImage from "@/public/Profile.jpg";
 // Import your project images here when you add them
 // For example:
 // import reviewBarImg from "@/public/projects/reviewbar.jpg";

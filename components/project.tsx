@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
-import defaultImage from "@/public/profile.jpg";
+import defaultImage from "@/public/Profile.jpg";
 
 type ProjectProps = (typeof projectsData)[number];
 
