@@ -32,24 +32,44 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+        Please contact me directly at{" "}        <a className="underline" href="mailto:nipuni20ch@gmail.com">
+          nipuni20ch@gmail.com
         </a>{" "}
         or through this form.
-      </p>
-
-      <form
+      </p>      <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+          try {
+            const { data, error } = await sendEmail(formData);
 
-          if (error) {
-            toast.error(error);
-            return;
+            if (error) {
+              toast.error(error);
+              // Fallback to mailto link if server action fails
+              const email = formData.get("senderEmail") as string;
+              const message = formData.get("message") as string;
+              window.open(`mailto:nipuni20ch@gmail.com?subject=Portfolio Contact&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`);
+              return;
+            }
+
+            toast.success("Email sent successfully!");
+          } catch (error) {
+            toast.error("Error sending email. Please use the email link above.");
+            console.error("Contact form error:", error);
           }
-
-          toast.success("Email sent successfully!");
+        }}
+        onSubmit={(e) => {
+          // Client-side fallback in case the server action doesn't work
+          const form = e.currentTarget;
+          const email = form.senderEmail.value;
+          const message = form.message.value;
+          
+          // Add a backup way to send email if the form submission fails
+          const fallbackTimeout = setTimeout(() => {
+            window.open(`mailto:nipuni20ch@gmail.com?subject=Portfolio Contact&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`);
+          }, 2000);
+          
+          // Clear the timeout if the form submits successfully
+          window.addEventListener('formSuccess', () => clearTimeout(fallbackTimeout), { once: true });
         }}
       >
         <input

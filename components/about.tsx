@@ -29,8 +29,8 @@ export default function About() {
       <p className="mb-3">
         My core technical skills include{" "}
         <span className="font-medium">
-          Java Spring Boot, Python FastAPI, Angular, and AI/ML technologies
-        </span>
+          Java Spring Boot, Python FastAPI, Python FlaskAPI, Angular, and AI/ML technologies
+        </span> (RAG, LLM, Prompt Engineering, MCP, A2A, Vector DBs and Knowledge Graphs)
         . I'm experienced with microservices architecture, RESTful API design, and 
         various database technologies. I demonstrate the ability to lead and contribute 
         effectively within cross-functional teams, driven by a passion for delivering impactful, 
@@ -39,12 +39,8 @@ export default function About() {
 
       <p>
         <span className="italic">Currently</span>, I'm pursuing my Bachelor of Information and Communication 
-        Technology degree with a strong academic record (GPA 3.83/4.00).
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        Technology degree with a strong academic record (GPA 3.83/4.00). I enjoy learning new things in 
+        <span className="font-medium"> emerging trends especially in AI/ML</span>.
       </p>
     </motion.section>
   );

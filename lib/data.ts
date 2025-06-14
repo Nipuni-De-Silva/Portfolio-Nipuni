@@ -2,7 +2,14 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import projectImage from "@/public/new.jpg";
+import defaultImage from "@/public/profile.jpg";
+// Import your project images here when you add them
+// For example:
+// import reviewBarImg from "@/public/projects/reviewbar.jpg";
+// import workoutBuddyImg from "@/public/projects/workout-buddy.jpg";
+// import noteItImg from "@/public/projects/note-it.jpg";
+// import uniShareImg from "@/public/projects/uni-share.jpg";
+// import localLibraryImg from "@/public/projects/local-library.jpg";
 
 export const links = [
   {
@@ -39,12 +46,11 @@ export const experiencesData = [
       "Currently pursuing my degree with a GPA of 3.83/4.00, focusing on software engineering and artificial intelligence.",
     icon: React.createElement(LuGraduationCap),
     date: "July 2021 - Present",
-  },
-  {
+  },  {
     title: "Associate Software Engineer",
     location: "Zafer (AI)",
     description:
-      "Working as a core member of the AI and R&D teams to design, develop, and deploy production-grade AI features like AI Summarizer, Document Chat, AI Search, AI AutoFill, and AI Insight. Led backend development using Python, Spring Boot, and Microservices.",
+      "Working as a core member development team specially for AI and R&D teams to design, develop, and deploy production-grade AI features like AI Summarizer, Document Chat, AI Search, AI AutoFill, and AI Insigh, MCP Protocols and A2A Protocolst. Led backend development using Python, Spring Boot, and Microservices.",
     icon: React.createElement(FaReact),
     date: "Nov 2024 - Present",
   },
@@ -58,41 +64,40 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const projectsData = [  {
+    title: "Final Year Research Project - Knowledge Graph-based Retrieval-Augmented Generation System",
+    tags: ["Python", "LangChain", "Neo4j", "FlaskAPI"],
+    imageUrl: defaultImage,  // Replace with: knowledgeGraphImg
+    githubUrl: "https://github.com/Nipuni-De-Silva/Knowledge-Graph-RAG",
+  },
   {
     title: "ReviewBar - Augmented Product Review System",
-    description:
-      "An e-commerce platform that automatically extracts product features and sentiment from customer reviews to help shoppers make informed purchasing decisions.",
-    tags: ["Vue.js", "Node.js", "Express.js", "MongoDB"],
-    imageUrl: projectImage,
+    tags: ["Vue JS", "Node", "Express JS", "MongoDB"],
+    imageUrl: defaultImage,  // Replace with: reviewBarImg
+    githubUrl: "https://github.com/Nipuni-De-Silva/ReviewBar.git",
   },
   {
     title: "Workout-Buddy - Personalized Fitness App",
-    description:
-      "A comprehensive fitness application that allows users to create, track, and manage personalized workout routines based on their fitness goals and preferences.",
-    tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
-    imageUrl: projectImage,
+    tags: ["React JS", "Node", "Express JS", "MongoDB"],
+    imageUrl: defaultImage,  // Replace with: workoutBuddyImg
+    githubUrl: "https://github.com/Nipuni-De-Silva/Workout-Buddy.git",
   },
   {
-    title: "Note-it - Note-taking Web Application",
-    description:
-      "A feature-rich note-taking application designed for efficiency and organization with tagging, categorization, and search functionality to keep notes accessible across devices.",
-    tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
-    imageUrl: projectImage,
+    title: "Note-it - Note Taking Web Application",
+    tags: ["React JS", "Node", "Express JS", "MongoDB"],
+    imageUrl: defaultImage,  // Replace with: noteItImg
+    githubUrl: "https://github.com/Nipuni-De-Silva/Note-it.git",
   },
   {
     title: "UNI-Share - Blogging Platform for Uni Students",
-    description:
-      "A dedicated blogging platform tailored for university students to share knowledge, experiences, and resources within their academic community.",
     tags: ["HTML", "CSS", "PHP", "MySQL"],
-    imageUrl: projectImage,
-  },
-  {
-    title: "Local Library - Online Catalog System",
-    description:
-      "An online catalog system for local libraries that enables users to browse available books, manage loans, and reserve items for future borrowing.",
-    tags: ["JavaScript", "Express.js", "MongoDB"],
-    imageUrl: projectImage,
+    imageUrl: defaultImage,  // Replace with: uniShareImg
+    githubUrl: "https://github.com/Nipuni-De-Silva/UNI-Share.git",
+  },  {
+    title: "Local Library - Online Catalog for Local Library",
+    tags: ["JavaScript", "Express JS", "MongoDB"],
+    imageUrl: defaultImage,  // Replace with: localLibraryImg
+    githubUrl: "https://github.com/Nipuni-De-Silva/express-locallibrary.git",
   }
 ] as const;
 

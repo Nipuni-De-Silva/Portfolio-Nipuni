@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import MyPic from '../public/new.jpg'
+import MyPic from '../public/profile.jpg'
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -15,11 +15,10 @@ export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
-  return (
-    <section
+  return (    <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -60,13 +59,11 @@ export default function Intro() {
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-      >
-        <span className="">Hello, I'm Nipuni <br /></span>
+      >        <span className="">Hello, I'm Nipuni <br /></span>
         <span className="">Software Engineer with expertise in </span> {" "}
-        <span className="font-bold">AI/ML and Full Stack Development</span>
-        
-        <span className=""><br />
-        Specializing in system architecture and production-grade AI features</span>
+        <span className="font-bold">Full Stack Software Development and AI/ML</span>
+        <span className=""><br /><br />
+        Experience with system architecture and production-grade AI features</span>
       </motion.h1>
 
       <motion.div

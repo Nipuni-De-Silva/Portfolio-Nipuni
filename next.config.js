@@ -11,10 +11,9 @@ const nextConfig = {
   },
   experimental: {
     serverActions: true,
-    fontLoaders: [
-      { loader: '@next/font/google', options: { subsets: ['latin'], display: 'swap', timeout: 10000 } },
-    ],
   },
+  // Disable Google Fonts since you're having connectivity issues
+  optimizeFonts: false,
   webpack: (config) => {
     // Disable webpack cache to prevent memory issues
     config.cache = false;
